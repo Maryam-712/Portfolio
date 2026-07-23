@@ -24,6 +24,9 @@ const MainHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width:90%;
+    align-self: center;
+    margin: 0 auto;
    
     
     
@@ -31,7 +34,7 @@ const MainHeader = styled.header`
    
     .logo {
     
-    width: 12%;
+    width: 18%;
     height: auto;
     }
 `;
