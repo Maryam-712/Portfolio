@@ -14,7 +14,7 @@ const App = () => {
 
   const theme = {
     colors: {
-      backgroundColor: "#ffffff",
+      backgroundColor: "#fcfcfd",
       heading: "#111827",
       text: "#6B7280",
       border: "#E5E7EB",

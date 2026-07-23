@@ -21,7 +21,7 @@ const Herosection = () => {
 
                 <div className='hero-image'>
                     <picture>
-                        <img src='images/laptop.png' alt='hero-image' />
+                        <img src='images/laptop (2).png' alt='hero-image' />
                     </picture>
                 </div>
             </div>
@@ -54,6 +54,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+   
   }
 
   .hero-top-data {
@@ -98,6 +99,7 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+    
   }
 
   .hero-image::before {
