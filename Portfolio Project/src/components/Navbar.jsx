@@ -5,13 +5,12 @@ import styled from 'styled-components'
 const Navbar = () => {
     const Nav = styled.nav`
     
-    .menuicon{
-        flex:1;
-    }
     
     .navlist{
         display: flex;
-        gap: 3rem;
+       gap:2.5rem;
+       margin-right: 28rem;
+        
     }
 
    
