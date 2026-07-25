@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 import { PrimaryButton, SecondaryButton } from '../styles/button';
+import { AppContext } from '../Context';
 
 const Herosection = ({para, image}) => {
+  const myname = useContext(AppContext);
+
     return (
         <Wrapper>
             <div className='container grid grid-two-column'>
                 <div className="hero-data">
                     <p className='hero-top-data'>Hi, I'm</p>
-                    <h1 className='hero-heading'>Maryam Mansoor</h1>
+                    <h1 className='hero-heading'>{myname}</h1>
                     <p className='hero-para'> {para}
                     </p>
                     <div className="hero-btn">
