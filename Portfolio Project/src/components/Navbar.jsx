@@ -9,7 +9,7 @@ const Navbar = () => {
     .navlist{
         display: flex;
        gap:2.5rem;
-       margin-right: 28rem;
+      
         
     }
 

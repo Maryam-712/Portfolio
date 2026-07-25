@@ -14,9 +14,7 @@ const Header = () => {
 
         </NavLink>
         <Navbar />
-        <PrimaryButton className='btn letstalk-btn'>
-          <NavLink to="/contact"> let's talk</NavLink>
-        </PrimaryButton>
+       
       </div>
     </MainHeader>
   )
@@ -26,13 +24,13 @@ const MainHeader = styled.header`
     padding: 0.8rem 2rem;
     height: 10%;
     background-color: ${({ theme }) => theme.colors.backgroundColor};
-    
+    width:100%;
     
    
     
     .header-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width:90%;
     margin: 0 auto;
@@ -44,7 +42,7 @@ const MainHeader = styled.header`
     }
       .logo {
       
-      width: 35%;
+      width: 20%;
       height: auto;
 
     

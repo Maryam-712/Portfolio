@@ -36,7 +36,7 @@ export const SecondaryButton = styled.button`
   color: #d946ef;
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -49,5 +49,9 @@ export const SecondaryButton = styled.button`
 
   &:active {
     transform: translateY(0);
+  }
+
+  a:hover{
+    color: white;
   }
 `;

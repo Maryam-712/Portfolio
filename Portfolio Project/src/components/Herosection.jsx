@@ -1,27 +1,30 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
-import { PrimaryButton } from '../styles/button';
+import { PrimaryButton, SecondaryButton } from '../styles/button';
 
-const Herosection = () => {
+const Herosection = ({para, image}) => {
     return (
         <Wrapper>
             <div className='container grid grid-two-column'>
                 <div className="hero-data">
                     <p className='hero-top-data'>Hi, I'm</p>
                     <h1 className='hero-heading'>Maryam Mansoor</h1>
-                    <p className='hero-para'> I build modern, responsive and
-                        high-performance web applications
-                        with React, Next.js and WordPress.
+                    <p className='hero-para'> {para}
                     </p>
+                    <div className="hero-btn">
                     <PrimaryButton className='btn hireme-btn'>
-                        <NavLink to="/contact"> Hire Me</NavLink>
+                        <NavLink to="/project"> Projects</NavLink>
                     </PrimaryButton>
+                    <SecondaryButton className='btn hireme-btn'>
+                        <NavLink to="/contact"> Download Resume</NavLink>
+                    </SecondaryButton>
+                    </div>
                 </div>
 
                 <div className='hero-image'>
                     <picture>
-                        <img src='images/laptop (2).png' alt='hero-image' />
+                        <img src={image} alt='hero-image' />
                     </picture>
                 </div>
             </div>
@@ -31,7 +34,7 @@ const Herosection = () => {
 }
 
 const Wrapper = styled.section`
- padding: 8rem 0;
+ padding: 0;
   background: #fcfcfd;
 
   .container {
@@ -59,9 +62,9 @@ const Wrapper = styled.section`
 
   .hero-top-data {
     font-size: 1.8rem;
-    color: #d946ef;
-    font-weight: 600;
-    letter-spacing: 2px;
+    color: ${({theme}) => theme.colors.text};
+    font-weight: 500;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
 
@@ -92,6 +95,13 @@ const Wrapper = styled.section`
   .hireme-btn {
     margin-top: 1rem;
     width: fit-content;
+  }
+
+  .hero-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
   }
 
   .hero-image {

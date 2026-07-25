@@ -16,7 +16,7 @@ const App = () => {
     colors: {
       backgroundColor: "#fcfcfd",
       heading: "#111827",
-      text: "#6B7280",
+      text: "#6b7280",
       border: "#E5E7EB",
       hover: "#C026D3",
       footer: "#F8FAFC",
