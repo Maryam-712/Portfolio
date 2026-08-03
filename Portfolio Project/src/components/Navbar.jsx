@@ -51,9 +51,6 @@ const Navbar = () => {
                     <NavLink className= "navbarlink" to="/project" >Projects</NavLink>
                 </li>
                  <li>
-                    <NavLink className= "navbarlink" to="/skill" >Skills</NavLink>
-                </li>
-                 <li>
                     <NavLink className= "navbarlink" to="/contact" >Contact</NavLink>
                 </li>
             </ul>

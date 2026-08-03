@@ -2,7 +2,6 @@ import React from 'react'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
-import Skills from './Skills'
 import Contact from './Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -14,14 +13,17 @@ const App = () => {
 
   const theme = {
     colors: {
-      backgroundColor: "#fcfcfd",
-      heading: "#111827",
+      backgroundColor: "#fff8fe",
+      heading: "#B33791",
       text: "#6b7280",
-      border: "#E5E7EB",
-      hover: "#C026D3",
-      footer: "#F8FAFC",
-      primary: " #D946EF",
-      secondary: "#A855F7",
+      border: "#e5e7eb",
+      hover: "#DB8DD0",
+      footer: "#C562AF",
+      primary: " #B33791",
+      secondary: "#C562AF",
+      gradient: "#DB8DD0",
+      space: "#FEC5F6",
+      white: "#ffffff",
 
 
     },
@@ -38,7 +40,6 @@ const App = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/project' element={<Projects/>}/>
-            <Route path='/skill' element={<Skills/>}/>
             <Route path='/contact' element={<Contact/>}/>
           </Routes>
           <Footer/>

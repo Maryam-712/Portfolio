@@ -25,15 +25,19 @@ h1{
 }
 
 h2{
+    font-size: 4rem;
+    font-weight: 700;
     font-family: "Sora", sans-serif;
 }
 
 h3{
+    font-size: 3rem;
+    font-weight: 500;
     font-family: "Sora", sans-serif;
 }
 
 p{
-
+    font-size: 1rem;
 }
 
 a{

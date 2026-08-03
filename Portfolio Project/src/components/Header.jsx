@@ -10,7 +10,7 @@ const Header = () => {
     <MainHeader>
       <div className="header-container">
         <NavLink to="/" className="logo-cont">
-          <img src="images/logo.png" alt="logo" className='logo' />
+          <img src="images/logo1.png" alt="logo" className='logo' />
 
         </NavLink>
         <Navbar />

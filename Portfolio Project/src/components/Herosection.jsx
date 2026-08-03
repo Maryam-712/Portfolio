@@ -1,18 +1,18 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 import { PrimaryButton, SecondaryButton } from '../styles/button';
-import { AppContext } from '../Context';
+import { useGlobalContext } from '../context';
 
-const Herosection = ({para, image}) => {
-  const myname = useContext(AppContext);
+const Herosection = () => {
+  const {image, para} = useGlobalContext();
 
     return (
         <Wrapper>
             <div className='container grid grid-two-column'>
                 <div className="hero-data">
                     <p className='hero-top-data'>Hi, I'm</p>
-                    <h1 className='hero-heading'>{myname}</h1>
+                    <h1 className='hero-heading'>Maryam Mansoor</h1>
                     <p className='hero-para'> {para}
                     </p>
                     <div className="hero-btn">
@@ -38,7 +38,7 @@ const Herosection = ({para, image}) => {
 
 const Wrapper = styled.section`
  padding: 0;
-  background: #fcfcfd;
+  background: ${({theme})=>theme.colors.backgroundColor};
 
   .container {
     max-width: 1200px;
@@ -76,16 +76,11 @@ const Wrapper = styled.section`
     font-family: "Sora", sans-serif;
     font-weight: 700;
     line-height: 1.1;
-
-    background: linear-gradient(
-      135deg,
-      #ec4899,
-      #d946ef,
-      #8b5cf6
+    color: ${({theme})=>theme.colors.heading}
+    
     );
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
   }
 
   .hero-para {

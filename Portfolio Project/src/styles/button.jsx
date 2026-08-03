@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const PrimaryButton = styled.button`
   padding: 1.4rem 3.2rem;
   border: none;
-  border-radius: 50px;
-  background: linear-gradient(135deg, #ec4899, #d946ef, #8b5cf6);
+  border-radius: 10px;
+  background: #B33791;
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
@@ -29,11 +29,11 @@ export const PrimaryButton = styled.button`
 `;
 
 export const SecondaryButton = styled.button`
-  padding: 1.4rem 3.2rem;
-  border: 2px solid #d946ef;
-  border-radius: 50px;
+  padding: 1rem 3rem;
+  border: 2px solid #B33791;
+  border-radius: 10px;
   background: transparent;
-  color: #d946ef;
+  color: #B33791;
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Sora", sans-serif;
@@ -51,7 +51,13 @@ export const SecondaryButton = styled.button`
     transform: translateY(0);
   }
 
+  a{
+  color:  #B33791;
+  }
+
   a:hover{
     color: white;
   }
+
+
 `;
