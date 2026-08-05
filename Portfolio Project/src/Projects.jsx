@@ -6,12 +6,16 @@ import styled from 'styled-components'
 const Projects = () => {
 
   const ProjectDis = styled.section`
-  background-color: ${({theme}) => theme.colors.backgroundColor};
   
+  background-color: ${({theme}) => theme.colors.backgroundColor};
+  position: relative;
+  
+
   .container {
   
   width: 80%;
   margin: 0 auto;
+  
 }
 
 /* Section */
@@ -21,12 +25,12 @@ const Projects = () => {
 .main-heading {
     text-align: center;
     padding: 4rem;
-    color: ${({theme}) => theme.colors.heading};
+    color: ${({theme}) => theme.colors.primary};
 }
 
  .sub-heading {
     margin-bottom: 2rem;
-    color: ${({theme}) => theme.colors.heading};
+    color: ${({theme}) => theme.colors.primary};
 }
 
 /* React Projects */
@@ -36,9 +40,9 @@ const Projects = () => {
 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-    gap: 2rem;
+    gap: 3rem;
 
-    margin-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 

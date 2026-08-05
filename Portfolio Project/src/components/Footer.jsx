@@ -57,8 +57,14 @@ const Footer = () => {
 }
 
 const Wrapper = styled.section`
+background-image: url('./images/footer.png');
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
  background-color: ${({theme})=> theme.colors.footer};
  margin-bottom: -11px;
+ margin-top:0px;
 
 
  .container{
@@ -128,7 +134,7 @@ color: white;
 color: white;
 font-size: 1.5rem;
 border: 2px solid white;
-border-radius: 20%;
+border-radius: 50%;
 padding: 0.5rem;
 display: flex;
 align-items: center;

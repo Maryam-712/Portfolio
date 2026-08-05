@@ -10,7 +10,7 @@ const Header = () => {
     <MainHeader>
       <div className="header-container">
         <NavLink to="/" className="logo-cont">
-          <img src="images/logo1.png" alt="logo" className='logo' />
+          <img src="images/headerlogo.png" alt="logo" className='logo' />
 
         </NavLink>
         <Navbar />
@@ -21,9 +21,9 @@ const Header = () => {
 }
 
 const MainHeader = styled.header`
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
     height: 10%;
-    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    background-color: ${({ theme }) => theme.colors.gradient};
     width:100%;
     
    

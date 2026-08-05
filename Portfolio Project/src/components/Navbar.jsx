@@ -8,7 +8,7 @@ const Navbar = () => {
     
     .navlist{
         display: flex;
-       gap:2.5rem;
+       gap:3rem;
       
         
     }
@@ -22,9 +22,10 @@ const Navbar = () => {
             &:visited{
                 text-decoration:none;
                 display: inline-block;
-                color: ${({theme}) => theme.colors.primary};
+                color: ${({theme}) => theme.colors.white};
                 font-size: 1.5rem;
                 font-weight: 500;
+                letter-spacing: 0.2rem;
                 font-family: "Sora", sans-serif;
                 text-transform: uppercase;
                 transition: color 0.3s linear;

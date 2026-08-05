@@ -1,7 +1,7 @@
 import React from 'react'
 import { RProjects, WProjects } from '../data/projects'
 import styled from 'styled-components'
-import { SecondaryButton } from '../styles/button'
+import { SecondaryButton, PrimaryButton } from '../styles/button'
 import { Link } from 'react-router-dom'
 
 
@@ -12,22 +12,41 @@ const ProjectCard = ({title, description, image, link}) => {
   /* Project Card */
 
 .project-card {
+
   width: 100%;
   max-width: 380px;
+  position: relative;
 
-  background: #ffffff;
+  background-color: ${({theme})=> theme.colors.backgroundColor} ;
 
-  border: 1px solid #ececec;
+  border: 2px solid ${({theme})=>theme.colors.primary};
   border-radius: 20px;
 
   overflow: hidden;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-
+  box-shadow:
+    0 12px 30px rgba(179, 55, 145, 0.15),
+    0 25px 60px rgba(197, 98, 175, 0.18);
   transition: all 0.35s ease;
 
   display: flex;
   flex-direction: column;
+  
+}
+
+.project-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,.28),
+        rgba(255,255,255,.05) 55%,
+        transparent
+    );
+
+    pointer-events: none;
 }
 
 .project-card:hover {
@@ -41,33 +60,41 @@ const ProjectCard = ({title, description, image, link}) => {
 /* Image */
 
 .project-img {
-  width: 100%;
+display: block;
+  width: 90%;
   height: 220px;
-
+ margin: 1.5rem auto;
   object-fit: cover;
+  padding: 1rem;
+  
+  border-radius: 20px;
 
   transition: transform .5s ease;
+
+  opacity:.85;
+    filter:saturate(.9);
 }
 
 .project-card:hover .project-img {
-  transform: scale(1.05);
-}
+  transform: scale(1.05);}
+  
+
 
 /* Content */
 
 .project-title {
-  margin: 22px 22px 10px;
+  margin: .5rem 2.5rem 1rem;
 
   font-size: 2rem;
   font-weight: 700;
 
-  color: #1f2937;
+  color: ${({theme})=>theme.colors.primary};
 }
 
 .desc {
-  margin: 0 22px 25px;
+  margin: 0 2.5rem 2rem;
 
-  color: #6b7280;
+  color: ${({theme})=>theme.colors.text};
 
   line-height: 1.7;
 
@@ -77,17 +104,27 @@ const ProjectCard = ({title, description, image, link}) => {
 /* Button Container */
 
 .project-btn {
-  margin: auto 22px 22px;
+  margin: auto 2.5rem 2rem;
 
   width: fit-content;
 }
 
 /* Link */
 
+.project-btn{
+ width: 90%;
+ margin: 0 auto;
+ margin-bottom: 1.5rem;
+ 
+}
+
 .project-btn a {
   text-decoration: none;
-  color: inherit;
 }
+
+
+
+
 `;
 
   return (

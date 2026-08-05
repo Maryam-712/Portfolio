@@ -15,7 +15,7 @@ const AppProvider = ({children}) => {
         return dispatch({
             type: "Home_update",
             payload: {
-                image: 'images/hero.jpg',
+                image: 'images/hero image.png',
                 para: 'I build modern, responsive and high-performance web applications with React, Next.js and WordPress.',
             }
         });

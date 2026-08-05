@@ -13,7 +13,7 @@ useEffect(() => {updateHomePage()}, [])
 
   const Homehero = styled.section`
   
-  padding: 10rem 0;
+  padding-top: 10rem;
    background: ${({theme})=>theme.colors.backgroundColor};
 `;
 
