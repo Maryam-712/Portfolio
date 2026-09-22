@@ -12,7 +12,7 @@ const Herosection = () => {
             <div className='container grid grid-two-column'>
                 <div className="hero-data">
                     <p className='hero-top-data'>Hi, I'm</p>
-                    <h1 className='hero-heading'>Maryam Mansoor</h1>
+                    <h1 className='hero-heading'>Maryam <br/> Mansoor</h1>
                     <p className='hero-para'> {para}
                     </p>
                     <div className="hero-btn">
@@ -44,6 +44,7 @@ const Wrapper = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+    height: 90vh;
   }
 
   .grid {
@@ -72,16 +73,17 @@ const Wrapper = styled.section`
   }
 
   .hero-heading {
-    font-size: 6rem;
-    font-family: "Sora", sans-serif;
-    font-weight: 700;
+    font-size: 9rem;
+    font-family: "Playfair display", sans-serif;
+    font-weight: 900;
+    text-transform:  uppercase;
     line-height: 1.1;
-    color: ${({theme})=>theme.colors.heading}
-    
-    );
+    color: ${({theme})=>theme.colors.heading};
 
-   
+    
   }
+
+
 
   .hero-para {
     font-size: 1.8rem;

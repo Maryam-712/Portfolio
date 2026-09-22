@@ -19,21 +19,21 @@ html{
 
 h1{
     color: ${({theme }) => theme.colors.heading};
-    font-size: 6rem;
+    
     font-weight: 900;
-    font-family: "Sora", sans-serif;
+    font-family: "Playfair Display", sans-serif;
 }
 
 h2{
     font-size: 4rem;
     font-weight: 700;
-    font-family: "Sora", sans-serif;
+    font-family: "Playfair Display", sans-serif;
 }
 
 h3{
     font-size: 3rem;
     font-weight: 500;
-    font-family: "Sora", sans-serif;
+    font-family: "Playfair Display", sans-serif;
 }
 
 p{

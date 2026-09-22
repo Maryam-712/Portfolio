@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Herosection from './components/Herosection'
 import styled from 'styled-components'
 import { useGlobalContext } from './context';
-import Projects from './Projects';
+import ProjComp from './components/ProjComp';
+import AboutComp from './components/AboutComp';
+import Timeline from './components/Timeline';
+import Testimonial from './components/Testimonial';
+
 
 const Home = () => {
 
@@ -13,7 +17,7 @@ useEffect(() => {updateHomePage()}, [])
 
   const Homehero = styled.section`
   
-  padding-top: 10rem;
+  padding-top: 5rem;
    background: ${({theme})=>theme.colors.backgroundColor};
 `;
 
@@ -30,7 +34,10 @@ useEffect(() => {updateHomePage()}, [])
     <Homehero>
       
       <Herosection />
-      <Projects/>
+      <AboutComp/>
+      <ProjComp/>
+      <Timeline/>
+      <Testimonial/>
   
     </Homehero>
   )

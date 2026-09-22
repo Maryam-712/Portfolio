@@ -1,11 +1,10 @@
-import React from 'react'
-import { RProjects, WProjects } from '../data/projects'
+
 import styled from 'styled-components'
 import { SecondaryButton, PrimaryButton } from '../styles/button'
 import { Link } from 'react-router-dom'
 
 
-const ProjectCard = ({title, description, image, link}) => {
+const ProjectCard = ({type, title, description, image, link}) => {
 
   const ProjectCard = styled.article`
    
@@ -19,7 +18,7 @@ const ProjectCard = ({title, description, image, link}) => {
 
   background-color: ${({theme})=> theme.colors.backgroundColor} ;
 
-  border: 2px solid ${({theme})=>theme.colors.primary};
+ 
   border-radius: 20px;
 
   overflow: hidden;
@@ -66,13 +65,14 @@ display: block;
  margin: 1.5rem auto;
   object-fit: cover;
   padding: 1rem;
-  
+  border: 1px solid  ${({theme})=>theme.colors.space};
   border-radius: 20px;
 
   transition: transform .5s ease;
 
   opacity:.85;
     filter:saturate(.9);
+   
 }
 
 .project-card:hover .project-img {
@@ -87,18 +87,23 @@ display: block;
 
   font-size: 2rem;
   font-weight: 700;
+  
+  text-transform: uppercase;
 
-  color: ${({theme})=>theme.colors.primary};
+  color: ${({theme})=>theme.colors.h2};
 }
 
 .desc {
   margin: 0 2.5rem 2rem;
 
-  color: ${({theme})=>theme.colors.text};
+  color: #595c63;
 
-  line-height: 1.7;
+  line-height: 1.5;
 
   font-size: 1.5rem;
+
+  
+  
 }
 
 /* Button Container */
@@ -112,9 +117,10 @@ display: block;
 /* Link */
 
 .project-btn{
- width: 90%;
+ width: 100%;
  margin: 0 auto;
  margin-bottom: 1.5rem;
+ display: inline-block;
  
 }
 
@@ -122,8 +128,31 @@ display: block;
   text-decoration: none;
 }
 
+.project-type{
+margin: 0 2.5rem .5rem;
+   color: ${({theme})=>theme.colors.secondary};
+   background: ${({theme})=>theme.colors.space};
 
+  line-height: 1.7;
+  letter-spacing: .1rem;
 
+  font-size: 1.4rem;
+  font-weight: 600;
+  
+  border-radius: 10px;
+  display: inline-block;
+  width: fit-content;
+    padding: 4px 12px;
+}
+
+.btn{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ margin: 0rem 2rem;
+ padding-bottom: 1rem;
+}
 
 `;
 
@@ -133,11 +162,17 @@ display: block;
         <figure>
         <img src={image}  alt={title} className='project-img' />
         </figure>
+        <p className='project-type'>{type}</p>
         <h2 className='project-title'>{title}</h2>
         <p className='desc'>{description}</p>
+        <div className='btn'>
+        <PrimaryButton className='project-btn'>
+           <a href={link}>Live Site</a>
+        </PrimaryButton >
         <SecondaryButton className='project-btn'>
-        <a href={link}>Visit</a>
+        <a href={link}>Github</a>
         </SecondaryButton>
+        </div>
     </div>
     </ProjectCard>
   )

@@ -22,18 +22,18 @@ const Navbar = () => {
             &:visited{
                 text-decoration:none;
                 display: inline-block;
-                color: ${({theme}) => theme.colors.white};
-                font-size: 1.5rem;
+                color: ${({theme}) => theme.colors.primary};
+                font-size: 1.8rem;
                 font-weight: 500;
                 letter-spacing: 0.2rem;
-                font-family: "Sora", sans-serif;
+                font-family: "Playfair display", sans-serif;
                 text-transform: uppercase;
                 transition: color 0.3s linear;
             }
             
             &:hover,
             &:active {
-            color: ${({theme}) => theme.colors.hover};
+            color: ${({theme}) => theme.colors.secondary};
             }
         }
     }

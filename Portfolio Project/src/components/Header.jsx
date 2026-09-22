@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar'
 import styled from 'styled-components'
 import { PrimaryButton } from '../styles/button'
+import { FaEnvelope } from "react-icons/fa6";
 
 
 const Header = () => {
@@ -10,11 +11,15 @@ const Header = () => {
     <MainHeader>
       <div className="header-container">
         <NavLink to="/" className="logo-cont">
-          <img src="images/headerlogo.png" alt="logo" className='logo' />
+          <img src="images/Maryam.png" alt="logo" className='logo' />
 
         </NavLink>
         <Navbar />
-       
+        <div className='email'>
+        <a href="">
+                     <FaEnvelope className='icons'/>
+                     </a>
+                     </div>
       </div>
     </MainHeader>
   )
@@ -23,26 +28,29 @@ const Header = () => {
 const MainHeader = styled.header`
     padding: 0.5rem 2rem;
     height: 10%;
-    background-color: ${({ theme }) => theme.colors.gradient};
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
     width:100%;
-    
-   
-    
+     border-bottom: 1px solid rgba(179, 55, 145, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     position: relative;
+  z-index: 10;
     .header-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width:90%;
     margin: 0 auto;
-    
+    gap: 5rem;
     }
   
     a{
       width:100%;
+     
     }
       .logo {
       
-      width: 20%;
+      width: 6vw;
+      max-width: fit-content;
       height: auto;
 
     
@@ -53,6 +61,19 @@ const MainHeader = styled.header`
       margin: 0 2rem;
       padding: 1rem;
       width: 25%
+    }
+
+    .email{
+     display: flex;
+     align-items: end;
+    }
+    .icons {
+     color: ${({theme})=> theme.colors.primary};
+     background-color:  ${({theme})=> theme.colors.space};
+     font-size: 4rem;
+     padding: 5px 8px;
+     border-radius: 8px;
+     
     }
 `;
 export default Header

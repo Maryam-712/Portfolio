@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from './components/ProjectCard'
-import { RProjects, WProjects } from './data/projects'
+import { Projectslist } from './data/projects'
 import styled from 'styled-components'
 
 const Projects = () => {
@@ -13,8 +13,9 @@ const Projects = () => {
 
   .container {
   
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  padding-top: 4rem;
   
 }
 
@@ -24,13 +25,17 @@ const Projects = () => {
 
 .main-heading {
     text-align: center;
-    padding: 4rem;
-    color: ${({theme}) => theme.colors.primary};
+    padding: 1rem 0rem;
+    margin-bottom:4rem;
+    color: ${({theme}) => theme.colors.h2};
 }
 
  .sub-heading {
-    margin-bottom: 2rem;
+   margin-bottom: 0; 
     color: ${({theme}) => theme.colors.primary};
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 /* React Projects */
@@ -50,57 +55,31 @@ const Projects = () => {
   return (
     <ProjectDis>
       <div className='container'>
-        <h2 className='main-heading'>Projects</h2>
-        <h3 className='sub-heading'>React Projects</h3>
+        <h3 className='sub-heading'>My Work</h3>
+        <h2 className='main-heading'>Selected Projects</h2>
+       
 
         <div className='project-grid'>
-          {RProjects.map((project) => (
+          {Projectslist.map((project) => (
             <ProjectCard
               key={project.id}
+              type={project.type}
               title={project.title}
               description={project.description}
               image={project.image}
               link={project.link}
+              github={project.github}
             />
           ))}
-          {RProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              link={project.link}
-            />
-          ))}
-          {RProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              link={project.link}
-            />
-          ))}
-        </div>
-
-        <h3 className='sub-heading'>Wordpress Projects</h3>
-        <div className='project-grid'>
-          {WProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              link={project.link}
-            />
-          ))}
-        </div>
+         </div>
 
       </div>
 
     </ProjectDis>
   )
 }
+
+
 
 
 

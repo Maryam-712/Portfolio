@@ -8,10 +8,11 @@ export const PrimaryButton = styled.button`
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: "Sora", sans-serif;
+  font-family: "Playfair display", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(217, 70, 239, 0.25);
+  display: inline-block;
 
   &:hover {
     transform: translateY(-3px);
@@ -23,7 +24,7 @@ export const PrimaryButton = styled.button`
   }
  
   a{
-    color: white;
+    color: inherit;
   }
   
 `;
@@ -36,15 +37,17 @@ export const SecondaryButton = styled.button`
   color: #B33791;
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: "Sora", sans-serif;
+  font-family: "Playfair display", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: inline-block;
 
   &:hover {
-    background: #d946ef;
+    background: #B33791;
     color: #ffffff;
     box-shadow: 0 10px 25px rgba(217, 70, 239, 0.3);
     transform: translateY(-3px);
+    color: white;
   }
 
   &:active {
@@ -52,12 +55,11 @@ export const SecondaryButton = styled.button`
   }
 
   a{
-  color:  #B33791;
+  color:  inherit;
+  
   }
 
-  a:hover{
-    color: white;
-  }
+ 
 
 
 `;

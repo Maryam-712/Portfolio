@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className='logomail'>
           <picture className='footerlogo'>
-          <img src="images/footerlogo.png" alt="logo" />
+          <img src="images/Maryam.png" alt="logo" />
           </picture>
           <a href="">msmaryammansoor712@gmail.com</a>
            </div>
@@ -57,7 +57,7 @@ const Footer = () => {
 }
 
 const Wrapper = styled.section`
-background-image: url('./images/footer.png');
+background-image: url('./images/projectsec.png');
 background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,13 +92,17 @@ background-size: cover;
  img{
  width: 100%;
  height: auto;
+ border-radius: 50%;
+ margin-top:-100px;
+ z-index: 1;
+ position: relative;
 
  }
 
  .navlist{
   display:flex;
   justify-content: center;
-  font-family: 'Sora', Sans Serif;
+  font-family: 'Playfair display', Sans Serif;
   font-size: 1.5rem;
   
   
@@ -109,7 +113,7 @@ background-size: cover;
  border-left: 2px solid white;
  padding: 0 2rem;
 
- color: white;
+ color: ${({theme})=> theme.colors.primary};
 }
 
 .nav-home{
@@ -117,23 +121,23 @@ padding:0 2rem;
 }
 
 .navlist a{
-color: white;
+color:${({theme})=> theme.colors.primary};;
 }
 
 .socials{
 display: flex;
 gap: 2rem;
 font-size: 2rem;
-color: white;
+color: ${({theme})=> theme.colors.primary};
 
 
 
 }
 
 .socials a{
-color: white;
+color: ${({theme})=> theme.colors.primary};
 font-size: 1.5rem;
-border: 2px solid white;
+border: 2px solid ${({theme})=> theme.colors.primary};
 border-radius: 50%;
 padding: 0.5rem;
 display: flex;
@@ -146,7 +150,7 @@ align-items: center;
 }
 
 .logomail a{
-color: white;
+color: ${({theme})=> theme.colors.primary};
 font-size:1.2rem;
 }
 

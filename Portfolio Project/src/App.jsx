@@ -15,7 +15,7 @@ const App = () => {
     colors: {
       backgroundColor: "#fff8fe",
       heading: "#B33791",
-      text: "#6b7280",
+      text: "#6b7280", 
       border: "#e5e7eb",
       hover: "#DB8DD0",
       footer: "#C562AF",
@@ -24,7 +24,10 @@ const App = () => {
       gradient: "#DB8DD0",
       space: "#FEC5F6",
       white: "#ffffff",
-
+      black: "#29021e",
+      desc: "#595c63",
+      h2: "#831843",
+      h3: "#9d174d",
 
     },
     media: { mobile: "768px", tab: "998px"},
