@@ -42,7 +42,7 @@ const ProjComp = () => {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
-        font-family: "Inter"
+        font-family: "Playfair display";
         line-height: 1.7;
         letter-spacing: .1rem;
         text-transform:  uppercase;

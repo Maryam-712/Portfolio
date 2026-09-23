@@ -11,7 +11,7 @@ const Herosection = () => {
         <Wrapper>
             <div className='container grid grid-two-column'>
                 <div className="hero-data">
-                    <p className='hero-top-data'>Hi, I'm</p>
+                    
                     <h1 className='hero-heading'>Maryam <br/> Mansoor</h1>
                     <p className='hero-para'> {para}
                     </p>

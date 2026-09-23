@@ -41,7 +41,7 @@ const AboutComp = () => {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
-        font-family: "Inter"
+        font-family: "Playfair display";
         line-height: 1.7;
         letter-spacing: .1rem;
         text-transform:  uppercase;
@@ -106,6 +106,19 @@ const AboutComp = () => {
         border-radius: 5px;
         }
 
+      .skill-head {
+        color: ${({ theme }) => theme.colors.primary};
+        
+      
+        padding-top:2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "Playfair display"
+        line-height: 1.7;
+        letter-spacing: .1rem;
+        text-transform:  uppercase;
+        }
+
       `;
   return (
     <AboutComp>
@@ -128,6 +141,7 @@ I like understanding the “why” behind the code—from the interface users se
 
 Currently, I’m building with modern web technologies and exploring AI-powered applications.</p>
                     </div>
+                    <h4 className='skill-head'>My Skill Set</h4>
                     <div className="skills">
                         <ul ><li>HTML</li>
                         <li>CSS</li>

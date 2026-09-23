@@ -13,7 +13,6 @@ const Footer = () => {
           <picture className='footerlogo'>
           <img src="images/Maryam.png" alt="logo" />
           </picture>
-          <a href="">msmaryammansoor712@gmail.com</a>
            </div>
            <div className='menuicon'>
             <ul className="navlist">
@@ -45,7 +44,7 @@ const Footer = () => {
               <FaGithub className='icons'/>
               </a>
             </div>
-
+            <a href="" className='email'>msmaryammansoor712@gmail.com</a>
 
         </div>
 
@@ -57,14 +56,14 @@ const Footer = () => {
 }
 
 const Wrapper = styled.section`
-background-image: url('./images/projectsec.png');
+background-image: url('./images/footer2.png');
 background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
  background-color: ${({theme})=> theme.colors.footer};
  margin-bottom: -11px;
- margin-top:0px;
+ margin-top: 10rem;;
 
 
  .container{
@@ -104,13 +103,13 @@ background-size: cover;
   justify-content: center;
   font-family: 'Playfair display', Sans Serif;
   font-size: 1.5rem;
-  
+  padding-top: 2rem;
   
  
  }
 
 .navbarlink{
- border-left: 2px solid white;
+ border-left: 2px solid ${({theme})=> theme.colors.gradient} ;
  padding: 0 2rem;
 
  color: ${({theme})=> theme.colors.primary};
@@ -162,6 +161,12 @@ padding: 1rem;
 font-size: 1.2rem;
 font-family: 'Inter', Sans Serif;
 letter-spacing:0.2rem;
+}
+
+.email{
+ color: ${({theme})=> theme.colors.secondary};
+ font-family: "Inter";
+ font-size: 1.2rem;
 }
 
 `;

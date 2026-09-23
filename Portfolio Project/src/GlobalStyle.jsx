@@ -36,6 +36,11 @@ h3{
     font-family: "Playfair Display", sans-serif;
 }
 
+h4{
+font-weight: 500;
+    font-family: "Playfair Display", sans-serif;
+}
+
 p{
     font-size: 1rem;
 }

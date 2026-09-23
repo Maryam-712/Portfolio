@@ -8,15 +8,16 @@ export const PrimaryButton = styled.button`
   color: #ffffff;
   font-size: 1.6rem;
   font-weight: 600;
+  letter-spacing: .1rem;
   font-family: "Playfair display", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(217, 70, 239, 0.25);
+  box-shadow: 0 5px 10px rgba(217, 70, 239, 0.25);
   display: inline-block;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(217, 70, 239, 0.4);
+    box-shadow: 0 8px 15px rgba(217, 70, 239, 0.4);
   }
 
   &:active {
@@ -37,6 +38,7 @@ export const SecondaryButton = styled.button`
   color: #B33791;
   font-size: 1.6rem;
   font-weight: 600;
+  letter-spacing: .1rem;
   font-family: "Playfair display", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -45,7 +47,7 @@ export const SecondaryButton = styled.button`
   &:hover {
     background: #B33791;
     color: #ffffff;
-    box-shadow: 0 10px 25px rgba(217, 70, 239, 0.3);
+    box-shadow: 0 5px 15px rgba(217, 70, 239, 0.3);
     transform: translateY(-3px);
     color: white;
   }

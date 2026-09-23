@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { useGlobalContext } from './context';
 import ProjComp from './components/ProjComp';
 import AboutComp from './components/AboutComp';
-import Timeline from './components/Timeline';
+import Tech from './components/Tech';
 import Testimonial from './components/Testimonial';
 
 
@@ -35,8 +35,8 @@ useEffect(() => {updateHomePage()}, [])
       
       <Herosection />
       <AboutComp/>
+      
       <ProjComp/>
-      <Timeline/>
       <Testimonial/>
   
     </Homehero>

@@ -56,23 +56,22 @@ const MainHeader = styled.header`
     
     }
 
-    .letstalk-btn{
-      
-      margin: 0 2rem;
-      padding: 1rem;
-      width: 25%
-    }
+    
 
     .email{
      display: flex;
      align-items: end;
+     
+    
     }
+
     .icons {
-     color: ${({theme})=> theme.colors.primary};
-     background-color:  ${({theme})=> theme.colors.space};
+     color: ${({theme})=> theme.colors.white};
+     background-color:  ${({theme})=> theme.colors.primary};
+    
      font-size: 4rem;
-     padding: 5px 8px;
-     border-radius: 8px;
+     padding: 8px;
+     border-radius: 15%;
      
     }
 `;
