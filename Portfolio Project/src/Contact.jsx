@@ -11,13 +11,51 @@ const Contact = () => {
   
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 10rem;
+  padding-top: 6rem;
+
 }
 
-.main-heading{
-    text-align: center;
-    padding: 4rem;
-    color: ${({ theme }) => theme.colors.heading};
-}
+ .main-heading {
+       
+        padding: 1rem 0rem;
+        margin-bottom:1rem;
+        color: ${({ theme }) => theme.colors.primary};
+    }
+    
+     .sub-heading {
+       margin-bottom: 0; 
+        color: ${({ theme }) => theme.colors.primary};
+         border: 1px solid ${({ theme }) => theme.colors.space};
+        border-radius: 8px;
+        display: inline-block;
+        width: fit-content;
+        padding: 5px 12px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: "Playfair display";
+        line-height: 1.7;
+        letter-spacing: .1rem;
+        text-transform:  uppercase;
+
+    }
+
+    .cont-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        
+
+    }
+
+    .cont-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 .contact-form{
 width:50%;
@@ -68,7 +106,7 @@ gap: 2rem;
 
     font-size: 1rem;
 
-    font-family: inherit;
+    font-family: "Inter";
 
     transition: all 0.3s ease;
 
@@ -142,9 +180,17 @@ gap: 2rem;
   return (
     <Wrapper>
 
-      <h2 className='main-heading'> Feel Free To Contact</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.970654302484!2d67.02121562013198!3d24.940710097940634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1785480261802!5m2!1sen!2s" width="100%" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+     
+     
       <div className='container'>
+        
+        <div className="cont-1">
+          <div className="cont-2">
+            <p className='sub-heading'>Feel Free to</p>
+            <h2 className='main-heading'>Contact Me</h2>
+            
+          </div>
+          </div>
         <div className="contact-form">
           <form action="https://formspree.io/f/xwpkpkrd" 
           method='POST'>
@@ -167,6 +213,7 @@ gap: 2rem;
               cols="30"
               rows="6"
               autoComplete='off'
+              placeholder='Message'
               required />
 
             <PrimaryButton type='submit'>

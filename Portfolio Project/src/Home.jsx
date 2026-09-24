@@ -6,6 +6,7 @@ import ProjComp from './components/ProjComp';
 import AboutComp from './components/AboutComp';
 import Tech from './components/Tech';
 import Testimonial from './components/Testimonial';
+import Contact from './Contact'
 
 
 const Home = () => {
@@ -38,6 +39,7 @@ useEffect(() => {updateHomePage()}, [])
       
       <ProjComp/>
       <Testimonial/>
+      <Contact/>
   
     </Homehero>
   )

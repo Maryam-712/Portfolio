@@ -63,7 +63,7 @@ background-size: cover;
 
  background-color: ${({theme})=> theme.colors.footer};
  margin-bottom: -11px;
- margin-top: 10rem;;
+ 
 
 
  .container{
