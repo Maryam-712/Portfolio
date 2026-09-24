@@ -43,6 +43,7 @@ font-weight: 500;
 
 p{
     font-size: 1rem;
+    font-family: "Inter";
 }
 
 a{

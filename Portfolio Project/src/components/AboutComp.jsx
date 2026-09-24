@@ -100,7 +100,7 @@ const AboutComp = () => {
         font-family: "Inter";
         letter-spacing: .1rem;
 
-        background-color:  ${({ theme }) => theme.colors.gradient};
+        background-color:  ${({ theme }) => theme.colors.secondary};
         color:  ${({ theme }) => theme.colors.white};
         padding: 6px 10px;
         border-radius: 5px;

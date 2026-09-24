@@ -56,12 +56,12 @@ const Footer = () => {
 }
 
 const Wrapper = styled.section`
-background-image: url('./images/footer2.png');
+background-image: url('./images/footer5.png');
 background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
- background-color: ${({theme})=> theme.colors.footer};
+ background-color: ${({theme})=> theme.colors.primary};
  margin-bottom: -11px;
  
 
@@ -72,6 +72,7 @@ background-size: cover;
  align-items: center;
  gap: 2.5rem;
  padding: 5rem;
+ 
   
  }
 
@@ -112,7 +113,7 @@ background-size: cover;
  border-left: 2px solid ${({theme})=> theme.colors.gradient} ;
  padding: 0 2rem;
 
- color: ${({theme})=> theme.colors.primary};
+ color: ${({theme})=> theme.colors.white};
 }
 
 .nav-home{
@@ -120,23 +121,23 @@ padding:0 2rem;
 }
 
 .navlist a{
-color:${({theme})=> theme.colors.primary};;
+color:${({theme})=> theme.colors.white};;
 }
 
 .socials{
 display: flex;
 gap: 2rem;
 font-size: 2rem;
-color: ${({theme})=> theme.colors.primary};
+color: ${({theme})=> theme.colors.white};
 
 
 
 }
 
 .socials a{
-color: ${({theme})=> theme.colors.primary};
+color: ${({theme})=> theme.colors.white};
 font-size: 1.5rem;
-border: 2px solid ${({theme})=> theme.colors.primary};
+border: 2px solid ${({theme})=> theme.colors.white};
 border-radius: 50%;
 padding: 0.5rem;
 display: flex;
@@ -149,7 +150,7 @@ align-items: center;
 }
 
 .logomail a{
-color: ${({theme})=> theme.colors.primary};
+color: ${({theme})=> theme.colors.white};
 font-size:1.2rem;
 }
 
@@ -164,7 +165,7 @@ letter-spacing:0.2rem;
 }
 
 .email{
- color: ${({theme})=> theme.colors.secondary};
+ color: ${({theme})=> theme.colors.white};
  font-family: "Inter";
  font-size: 1.2rem;
 }

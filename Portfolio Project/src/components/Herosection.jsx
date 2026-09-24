@@ -86,10 +86,11 @@ const Wrapper = styled.section`
 
 
   .hero-para {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #6b7280;
     line-height: 1.8;
     max-width: 55rem;
+    
   }
 
   .hireme-btn {

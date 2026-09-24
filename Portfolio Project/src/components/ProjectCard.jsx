@@ -85,12 +85,12 @@ display: block;
 .project-title {
   margin: .5rem 2.5rem 1rem;
 
-  font-size: 2rem;
-  font-weight: 700;
-  
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: "Inter";
   text-transform: uppercase;
 
-  color: ${({theme})=>theme.colors.h2};
+  color: ${({theme})=>theme.colors.black};
 }
 
 .desc {
@@ -100,9 +100,9 @@ display: block;
 
   line-height: 1.5;
 
-  font-size: 1.5rem;
-
-  
+  font-size: 1.9rem;
+ 
+  font-fmaily:"Inter";
   
 }
 
