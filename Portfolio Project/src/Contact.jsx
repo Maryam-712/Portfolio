@@ -104,7 +104,7 @@ gap: 2rem;
 
     outline: none;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     font-family: "Inter";
 
@@ -197,7 +197,7 @@ gap: 2rem;
             <input
               type="text"
               name='Username'
-              placeholder='Username'
+              placeholder='Name'
               autoComplete='off'
               required />
 

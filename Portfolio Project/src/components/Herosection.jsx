@@ -19,9 +19,13 @@ const Herosection = () => {
                     <PrimaryButton className='btn hireme-btn'>
                         <NavLink to="/project"> Projects</NavLink>
                     </PrimaryButton>
+
+                    <a href="../pdf/maryam.pdf"
+                    download='maryam.pdf'>
                     <SecondaryButton className='btn hireme-btn'>
-                        <NavLink to="/contact"> Download Resume</NavLink>
+                        Download Resume
                     </SecondaryButton>
+                    </a>
                     </div>
                 </div>
 

@@ -37,10 +37,10 @@ const Footer = () => {
               <a href="">
               <FaInstagram className='icons'/>
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/maryam-mansoor-8a52aa24b/">
               <FaLinkedin className='icons'/>
               </a>
-              <a href="">
+              <a href="https://github.com/Maryam-712">
               <FaGithub className='icons'/>
               </a>
             </div>
@@ -103,8 +103,8 @@ background-size: cover;
   display:flex;
   justify-content: center;
   font-family: 'Playfair display', Sans Serif;
-  font-size: 1.5rem;
-  padding-top: 2rem;
+  font-size: 1.7rem;
+
   
  
  }
@@ -127,7 +127,7 @@ color:${({theme})=> theme.colors.white};;
 .socials{
 display: flex;
 gap: 2rem;
-font-size: 2rem;
+font-size: 2.5rem;
 color: ${({theme})=> theme.colors.white};
 
 
@@ -136,7 +136,7 @@ color: ${({theme})=> theme.colors.white};
 
 .socials a{
 color: ${({theme})=> theme.colors.white};
-font-size: 1.5rem;
+font-size: 2rem;
 border: 2px solid ${({theme})=> theme.colors.white};
 border-radius: 50%;
 padding: 0.5rem;
@@ -167,7 +167,7 @@ letter-spacing:0.2rem;
 .email{
  color: ${({theme})=> theme.colors.white};
  font-family: "Inter";
- font-size: 1.2rem;
+ font-size: 1.5rem;
 }
 
 `;

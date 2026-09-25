@@ -16,7 +16,7 @@ const Header = () => {
         </NavLink>
         <Navbar />
         <div className='email'>
-        <a href="">
+        <a href="/contact">
                      <FaEnvelope className='icons'/>
                      </a>
                      </div>

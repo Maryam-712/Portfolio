@@ -59,15 +59,21 @@ const AboutComp = () => {
     }
 
     .about-btn{
-      color: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.primary};
       border-color: ${({ theme }) => theme.colors.secondary};
       background-color: inherit;
       box-shadow: none;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       font-weight: 600;
       text-align: center;
       font-family: "Playfair display";
       margin-top: 3rem;
+    }
+
+    .about-btn:hover{
+    color: ${({ theme }) => theme.colors.white};
+      border-color: ${({ theme }) => theme.colors.secondary};
+      background-color:${({ theme }) => theme.colors.secondary} ;
     }
 
     .hero-image img {
@@ -154,8 +160,9 @@ Currently, I’m building with modern web technologies and exploring AI-powered 
                         <li>WORDPRESS</li>
                         <li>ELEMENTOR</li></ul>
                     </div>
-                   
+                   <a href="/about">
                     <SecondaryButton className='about-btn'>Get to know more </SecondaryButton>
+                    </a>
                 </div>
 
                 </div>
