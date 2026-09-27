@@ -115,6 +115,7 @@ const Wrapper = styled.section`
     align-items: center;
     position: relative;
     
+    
   }
 
   .hero-image::before {
@@ -133,7 +134,7 @@ const Wrapper = styled.section`
     max-width: 550px;
     position: relative;
     z-index: 1;
-
+    
     animation: float 4s ease-in-out infinite;
   }
 

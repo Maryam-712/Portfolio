@@ -61,7 +61,7 @@ background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
- background-color: ${({theme})=> theme.colors.primary};
+ background-color: ${({theme})=> theme.colors.secondary};
  margin-bottom: -11px;
  
 
