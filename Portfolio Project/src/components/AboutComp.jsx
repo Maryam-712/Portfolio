@@ -125,6 +125,194 @@ const AboutComp = () => {
         text-transform:  uppercase;
         }
 
+        /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: 90%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 4rem;
+  }
+
+  .cont-1 {
+    width: 55%;
+  }
+
+  .cont-2 {
+    width: 45%;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .para {
+    font-size: 1.6rem;
+  }
+
+  .about-btn {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .skills ul {
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .skills li {
+    font-size: 1.4rem;
+  }
+
+  .skill-head {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    height: auto;
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+  }
+
+  .cont-1 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cont-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    letter-spacing: 0.08rem;
+  }
+
+  .para {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .skill-head {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+  }
+
+  .skills ul {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+
+  .skills li {
+    font-size: 1.3rem;
+    padding: 5px 9px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 92%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 2.5rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+
+  .para {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .hero-image img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .skill-head {
+    font-size: 1.4rem;
+  }
+
+  .skills ul {
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+  }
+
+  .skills li {
+    font-size: 1.1rem;
+    padding: 5px 8px;
+  }
+}
       `;
   return (
     <AboutComp>

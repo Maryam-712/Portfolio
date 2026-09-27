@@ -89,6 +89,134 @@ const ProjComp = () => {
       align-items: center;
       gap: 1rem;
     }
+
+    /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  .main-heading {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.3rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .cont-1 {
+    gap: 2rem;
+  }
+
+  .proj-btn {
+    font-size: 1.7rem;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    padding-top: 2.5rem;
+  }
+
+  .main-heading {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    letter-spacing: 0.08rem;
+  }
+
+  .cont-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .cont-2 {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .proj-btn {
+    font-size: 1.5rem;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 92%;
+    padding-top: 2rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+
+  .cont-1 {
+    gap: 1rem;
+  }
+
+  .project-grid {
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .proj-btn {
+    font-size: 1.3rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+    
         `;
   return (
     <ProjectComp>
