@@ -53,7 +53,7 @@ const Wrapper = styled.section`
 
   .grid {
     display: grid;
-    gap: 5rem;
+    gap: 1rem;
   }
 
   .grid-two-column {
@@ -181,7 +181,7 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 6rem 0;
+    padding: 1rem 0;
 
     .hero-heading {
       font-size: 3.8rem;
