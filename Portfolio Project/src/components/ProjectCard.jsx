@@ -154,6 +154,142 @@ margin: 0 2.5rem .5rem;
  padding-bottom: 1rem;
 }
 
+/* =========================
+   TABLET — 768px to 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+  .project-card {
+    max-width: 350px;
+    border-radius: 18px;
+    padding: 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+   
+  }
+
+  .project-title {
+    margin: .5rem 2rem .8rem;
+    font-size: 2rem;
+  }
+
+  .desc {
+    margin: 0 2rem 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .project-type {
+    margin: 0 2rem .5rem;
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    margin: 0 1.5rem;
+    gap: .8rem;
+  }
+}
+
+
+/* =========================
+   MOBILE — 480px to 767px
+========================= */
+
+@media (max-width: 767px) {
+
+  .project-card {
+    width: 90%;
+    max-width: 380px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .project-img {
+    width: 90%;
+    height: 190px;
+    margin: 1rem auto;
+    padding: .7rem;
+    border-radius: 16px;
+  }
+
+  .project-title {
+    margin: .5rem 1.5rem .8rem;
+    font-size: 1.8rem;
+  }
+
+  .desc {
+    margin: 0 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .project-type {
+    margin: 0 1.5rem .5rem;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+  }
+
+  .btn {
+    margin: 0 1.2rem;
+    gap: .6rem;
+    padding-bottom: .8rem;
+  }
+
+  .project-btn {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE — 360px to 479px
+========================= */
+
+@media (max-width: 479px) {
+
+  .project-card {
+    width: 85%;
+    border-radius: 14px;
+    gap: .6rem;
+    padding: 2rem;
+  }
+
+  .project-img {
+    width: 95%;
+    height: 160px;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: 14px;
+  }
+
+  .project-title {
+    margin: .5rem 1.2rem .7rem;
+    font-size: 1.6rem;
+  }
+
+  .desc {
+    margin: 0 1.2rem 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1.45;
+  }
+
+  .project-type {
+    margin: 0 1.2rem .5rem;
+    font-size: 1.1rem;
+    padding: 3px 8px;
+  }
+
+  .btn {
+    margin: 0 1rem;
+    gap: .5rem;
+  }
+}
+
 `;
 
   return (

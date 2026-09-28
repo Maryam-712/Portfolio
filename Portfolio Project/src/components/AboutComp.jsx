@@ -55,6 +55,7 @@ const AboutComp = () => {
         justify-content: start;
         align-items:start;
         width: 50%;
+        margin: 0 auto;
         
     }
 
@@ -75,12 +76,16 @@ const AboutComp = () => {
       border-color: ${({ theme }) => theme.colors.secondary};
       background-color:${({ theme }) => theme.colors.secondary} ;
     }
+      
 
     .hero-image img {
+    display: block;
     width: 100%;
     max-width: 550px;
+    margin: 0 auto;
     }
 
+ 
     .cont-2{
     
     }
@@ -142,10 +147,12 @@ const AboutComp = () => {
 
   .cont-1 {
     width: 55%;
+   padding: 0 2rem ;
   }
 
   .cont-2 {
     width: 45%;
+     
   }
 
   .main-heading {
@@ -165,10 +172,17 @@ const AboutComp = () => {
     margin-top: 2rem;
   }
 
-  .hero-image img {
-    width: 100%;
-    max-width: 450px;
-  }
+ 
+  
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  transform: translateX(0%);
+}
+
 
   .skills ul {
     gap: 1.2rem;
@@ -238,9 +252,11 @@ const AboutComp = () => {
     margin-top: 1.5rem;
   }
 
+  
   .hero-image img {
     width: 80%;
     max-width: 350px;
+  
   }
 
   .skill-head {
@@ -294,9 +310,12 @@ const AboutComp = () => {
     margin-top: 1.2rem;
   }
 
+
+
   .hero-image img {
     width: 90%;
     max-width: 300px;
+ 
   }
 
   .skill-head {

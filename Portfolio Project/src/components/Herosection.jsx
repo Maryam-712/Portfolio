@@ -160,10 +160,15 @@ const Wrapper = styled.section`
 
     .hero-data {
       align-items: center;
+      
     }
 
     .hero-heading {
       font-size: 4.5rem;
+    }
+
+    .hero-btn{
+     gap: 1rem;
     }
 
     .hero-image {
@@ -184,6 +189,10 @@ const Wrapper = styled.section`
 
     .hero-para {
       font-size: 1.6rem;
+    }
+
+     .hero-btn{
+     gap: 1rem;
     }
 
     .hero-image img {
