@@ -255,8 +255,8 @@ margin: 0 2.5rem .5rem;
   .project-card {
     width: 85%;
     border-radius: 14px;
-    gap: .6rem;
-    padding: 2rem;
+   
+    padding: 1rem;
   }
 
   .project-img {
