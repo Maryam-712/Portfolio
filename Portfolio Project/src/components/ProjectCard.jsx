@@ -15,7 +15,7 @@ const ProjectCard = ({type, title, description, image, link}) => {
   width: 100%;
   max-width: 380px;
   position: relative;
-
+   height: 100%;
   background-color: ${({theme})=> theme.colors.backgroundColor} ;
 
  
@@ -161,37 +161,39 @@ margin: 0 2.5rem .5rem;
 @media (max-width: 1024px) {
 
   .project-card {
-    max-width: 350px;
+    max-width: 300px;
+  
     border-radius: 18px;
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .project-img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     margin: 0 auto;
    
   }
 
   .project-title {
     margin: .5rem 2rem .8rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .desc {
     margin: 0 2rem 1.8rem;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 1.3;
   }
 
   .project-type {
-    margin: 0 2rem .5rem;
+    margin: .5rem 1rem ;
+    
     font-size: 1.3rem;
   }
 
   .btn {
     margin: 0 1.5rem;
-    gap: .8rem;
+    gap: .5rem;
   }
 }
 
@@ -224,7 +226,7 @@ margin: 0 2.5rem .5rem;
 
   .desc {
     margin: 0 1.5rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 
@@ -253,7 +255,7 @@ margin: 0 2.5rem .5rem;
 @media (max-width: 479px) {
 
   .project-card {
-    width: 85%;
+    width: 80%;
     border-radius: 14px;
    
     padding: 1rem;
@@ -274,7 +276,7 @@ margin: 0 2.5rem .5rem;
 
   .desc {
     margin: 0 1.2rem 1.3rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.45;
   }
 

@@ -63,7 +63,7 @@ const Testimonial = () => {
     .cont-1::before {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 12%;
   left: 33%;
   transform: translateX(-50%);
 
@@ -121,13 +121,13 @@ const Testimonial = () => {
 
   .container {
     width: 90%;
-    min-height: 65vh;
+    min-height: 55vh;
     height: auto;
     padding: 3rem 2rem;
   }
 
   .main-heading {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   .sub-heading {
@@ -140,15 +140,15 @@ const Testimonial = () => {
   }
 
   .cont-1::before {
-    top: 40px;
-    left: 35%;
+    top: 12%;
+    left: 29%;
     width: 110%;
     height: 28%;
   }
 
   .test-img {
-    width: 90%;
-    max-width: 350px;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .circle {
@@ -177,6 +177,7 @@ const Testimonial = () => {
     padding: .5rem 0;
     margin-bottom: 2.5rem;
     text-align: center;
+     font-size: 3rem;
   }
 
   .sub-heading {
@@ -205,8 +206,8 @@ const Testimonial = () => {
   }
 
   .test {
-    width: 85%;
-    max-width: 330px;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .test-img {
@@ -236,6 +237,7 @@ const Testimonial = () => {
 
   .main-heading {
     margin-bottom: 2rem;
+    font-size: 3rem;
   }
 
   .sub-heading {
@@ -249,16 +251,16 @@ const Testimonial = () => {
   }
 
   .cont-1::before {
-    top: 20px;
-    left: 50%;
+    top: 22%;
+    left: 18%;
     width: 130%;
     height: 20%;
     opacity: .35;
   }
 
   .test {
-    width: 90%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .test-img {

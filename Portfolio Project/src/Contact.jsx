@@ -162,14 +162,178 @@ gap: 2rem;
     box-shadow: 0 10px 20px rgba(124, 58, 237, 0.25);
   }
 
-  @media (max-width: 768px) {
-    .contact-form {
-      padding: 2rem;
-    }
+ /* =========================
+   TABLET
+========================= */
 
-    input[type="submit"] {
-      width: 100%;
-    }
+@media (max-width: 1024px) {
+
+  .container {
+    width: 88%;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  .cont-1 {
+    gap: 2.5rem;
+  }
+
+  .contact-form {
+    max-width: 650px;
+    padding: 2.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  .main-heading {
+    padding: 0.8rem 0;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    letter-spacing: 0.08rem;
+  }
+
+  .cont-1 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cont-2 {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  form {
+    gap: 1.4rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1.2rem;
+    padding: 0.9rem 1rem;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 85%;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    padding: 4px 8px;
+    letter-spacing: 0.05rem;
+  }
+
+  .cont-1 {
+    gap: 1.5rem;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+
+  form {
+    gap: 1.2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+  }
+
+  textarea {
+    min-height: 130px;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.85rem;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL SCREENS
+========================= */
+
+@media (max-width: 360px) {
+
+  .container {
+    width: 94%;
+    padding-top: 2.5rem;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .sub-heading {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 1.2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
   }
 `;
 

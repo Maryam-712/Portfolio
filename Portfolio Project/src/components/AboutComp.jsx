@@ -14,7 +14,7 @@ const AboutComp = () => {
       width: 90%;
       height: 100vh;
       margin: 0 auto;
-      padding-top: 4rem;
+     
       display: flex;
       align-items: center;
       justify-content: start;
@@ -139,9 +139,9 @@ const AboutComp = () => {
   .container {
     width: 90%;
     height: auto;
-    min-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    min-height: 60vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     gap: 4rem;
   }
 
@@ -151,12 +151,12 @@ const AboutComp = () => {
   }
 
   .cont-2 {
-    width: 45%;
+    width: 100%;
      
   }
 
   .main-heading {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .sub-heading {
@@ -232,7 +232,7 @@ const AboutComp = () => {
   }
 
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0.5rem 0;
   }
 
@@ -292,7 +292,7 @@ const AboutComp = () => {
   }
 
   .main-heading {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .sub-heading {

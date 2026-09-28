@@ -135,22 +135,10 @@ const Wrapper = styled.section`
     position: relative;
     z-index: 1;
     
-    animation: float 4s ease-in-out infinite;
+ 
   }
 
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-15px);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
-  }
+  
 
   @media (max-width: 998px) {
     .grid-two-column {

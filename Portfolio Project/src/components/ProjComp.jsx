@@ -103,7 +103,7 @@ const ProjComp = () => {
 
   .main-heading {
     margin-bottom: 3rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .sub-heading {
@@ -111,7 +111,7 @@ const ProjComp = () => {
   }
 
   .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-bottom: 5rem;
   }
@@ -141,7 +141,7 @@ const ProjComp = () => {
 
   .main-heading {
     margin-bottom: 2.5rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding: 0.5rem 0;
   }
 
@@ -191,7 +191,7 @@ const ProjComp = () => {
   }
 
   .main-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
 

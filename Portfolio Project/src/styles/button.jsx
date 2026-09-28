@@ -34,7 +34,7 @@ a {
 ========================= */
 
 @media (max-width: 1024px) {
-  padding: 1.2rem 2.8rem;
+  padding: .8rem 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -108,7 +108,7 @@ a {
 ========================= */
 
 @media (max-width: 1024px) {
-  padding: 0.9rem 2.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
   border-radius: 9px;
 }
