@@ -145,6 +145,7 @@ margin-bottom: 1rem;
      align-items: start;
      gap: 2rem;
      margin-bottom: 6rem;
+      padding-top: 2rem;
     }
      .skills ul{
         display: flex;
@@ -178,6 +179,189 @@ margin-bottom: 1rem;
   margin-bottom: 2rem;
   font-weight: 800;
         }
+
+        /* =========================================
+   TABLET + MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sub-heading {
+    font-size: 1.4rem;
+    padding: 5px 10px;
+  }
+
+  .cont-1 {
+    padding: 3rem 0;
+  }
+
+  .para {
+    font-size: 1.7rem;
+    line-height: 1.6;
+  }
+
+  /* Image + content stack */
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sec-cont {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .heading {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .detail {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .dates {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Skills */
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+  }
+
+  .skills ul {
+    width: 100%;
+    box-sizing: border-box;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  
+    justify-content: start;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .skills li {
+    font-size: 1.5rem;
+  }
+
+  .heading1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 92%;
+    padding: 2rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    letter-spacing: 0.05rem;
+  }
+
+  .cont-1 {
+    padding: 2rem 0;
+  }
+
+  .para {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .detail {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding-left: 0.8rem;
+  }
+
+  .dates {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .skills ul {
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .skills li {
+    font-size: 1.3rem;
+    padding: 5px 8px;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
 `;
     return (
       <Aboutsec>
