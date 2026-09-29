@@ -260,7 +260,7 @@ gap: 2rem;
 @media (max-width: 480px) {
 
   .container {
-    width: 85%;
+    width: 70%;
     padding-top: 3rem;
     padding-bottom: 8rem;
   }
@@ -307,34 +307,8 @@ gap: 2rem;
 }
 
 
-/* =========================
-   EXTRA SMALL SCREENS
-========================= */
 
-@media (max-width: 360px) {
-
-  .container {
-    width: 94%;
-    padding-top: 2.5rem;
-  }
-
-  .main-heading {
-    font-size: 1.8rem;
-  }
-
-  .sub-heading {
-    font-size: 0.9rem;
-  }
-
-  .contact-form {
-    padding: 1.2rem;
-  }
-
-  input,
-  textarea {
-    font-size: 0.95rem;
-  }
-  }
+  
 `;
 
 

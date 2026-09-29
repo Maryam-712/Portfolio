@@ -220,7 +220,7 @@ letter-spacing:0.2rem;
 
 
   .container {
-  height: 40vh;
+ 
     padding: 4rem 2rem;
     gap: 1.8rem;
   }
