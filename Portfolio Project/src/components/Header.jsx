@@ -77,7 +77,7 @@ const MainHeader = styled.header`
 
     @media (max-width: 768px){
 
-     padding: 0.5rem 3rem;
+     padding: 0.5rem 2rem;
 
       .email{
        display: none;
@@ -85,7 +85,7 @@ const MainHeader = styled.header`
 
        .logo {
       
-      width: 12vw;
+      width: 15vw;
       max-width: fit-content;
       height: auto;
 

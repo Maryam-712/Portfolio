@@ -49,7 +49,7 @@ const Navbar = () => {
             }
         }
 
-        .menu-btn [name= 'close-outline']{
+        .menu-btn[name= "close-outline"]{
         display: none;
             
         }
@@ -60,7 +60,7 @@ const Navbar = () => {
                 z-index: 999;
 
                 .menu-nav-icon{
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                     color: ${({theme}) => theme.colors.secondary};
 
                 }
@@ -72,7 +72,7 @@ const Navbar = () => {
              position: absolute;
              top:0;
              left: 0;
-            color: ${({theme}) => theme.colors.backgroundColor};
+            background-color: ${({theme}) => theme.colors.backgroundColor};
 
              transform: translate(100%);
 
@@ -80,6 +80,9 @@ const Navbar = () => {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            visibility: hidden;
+            opacity: 0;
             }
 
             li {
@@ -93,10 +96,10 @@ const Navbar = () => {
 
             .active .menu-nav-icon{
              display: none;
-             font-size: 2rem;
+             font-size: 3rem;
              position: absolute;
-             top: 30%;
-             right: 10%;
+             top: 50%;
+             right: 8%;
              color: ${({theme}) => theme.colors.secondary};
              z-index: 999;
 
@@ -106,10 +109,10 @@ const Navbar = () => {
             display: inline-block;
             }
 
-            .acitve .navlist{
+            .active .navlist{
             visibility: visible;
             opacity: 1;
-            transofrm: translateX(0);
+            transform: translateX(0%);
             z-index: 999;
 
             }
@@ -117,7 +120,7 @@ const Navbar = () => {
   `;
   return (
     <Nav>
-        <div className='menuicon active'>
+        <div className={openMenu ? 'menuicon active' : "'menuicon"}>
             <ul className="navlist">
                 <li>
                     <NavLink className= "navbarlink" to="/" >Home</NavLink>
@@ -135,8 +138,10 @@ const Navbar = () => {
 
 
             <div className='menu-btn'>
-            <CgMenu name= 'menu-outline' className='menu-nav-icon'/>
-            <CgCloseO  name= 'close-outline' className='menu-nav-icon close-outline'/>
+            <CgMenu name= 'menu-outline' className='menu-nav-icon'
+            onClick={()=> setOpenMenu(true)}/>
+            <CgCloseO  name= 'close-outline' className='menu-nav-icon 
+            close-outline' onClick={()=> setOpenMenu(false)}/>
 
 
             </div>
