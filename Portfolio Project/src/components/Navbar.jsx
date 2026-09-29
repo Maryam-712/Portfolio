@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import { CgMenu,  CgCloseO  } from "react-icons/cg";
 
 const Navbar = () => {
+
+    const [openMenu, setOpenMenu] = useState(false);
+
     const Nav = styled.nav`
     
     
@@ -37,10 +41,83 @@ const Navbar = () => {
             }
         }
     }
+        .menu-btn{
+        display: none;
+
+            .close-outline{
+                display: none;
+            }
+        }
+
+        .menu-btn [name= 'close-outline']{
+        display: none;
+            
+        }
+
+        @media (max-width: 768px){
+            .menu-btn{
+                display: inline-block;
+                z-index: 999;
+
+                .menu-nav-icon{
+                    font-size: 2.5rem;
+                    color: ${({theme}) => theme.colors.secondary};
+
+                }
+            }
+
+            .navlist{
+             width: 100vw;
+             height: 100vh;
+             position: absolute;
+             top:0;
+             left: 0;
+            color: ${({theme}) => theme.colors.backgroundColor};
+
+             transform: translate(100%);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+
+            li {
+            .navbarlink{
+                &:link,
+                &:visited{
+                    font-size: 2.5rem;
+                        }
+                 }
+            }
+
+            .active .menu-nav-icon{
+             display: none;
+             font-size: 2rem;
+             position: absolute;
+             top: 30%;
+             right: 10%;
+             color: ${({theme}) => theme.colors.secondary};
+             z-index: 999;
+
+            }
+
+            .active .close-outline{
+            display: inline-block;
+            }
+
+            .acitve .navlist{
+            visibility: visible;
+            opacity: 1;
+            transofrm: translateX(0);
+            z-index: 999;
+
+            }
+        }
   `;
   return (
     <Nav>
-        <div className='menuicon'>
+        <div className='menuicon active'>
             <ul className="navlist">
                 <li>
                     <NavLink className= "navbarlink" to="/" >Home</NavLink>
@@ -55,8 +132,14 @@ const Navbar = () => {
                     <NavLink className= "navbarlink" to="/contact" >Contact</NavLink>
                 </li>
             </ul>
-            
-            
+
+
+            <div className='menu-btn'>
+            <CgMenu name= 'menu-outline' className='menu-nav-icon'/>
+            <CgCloseO  name= 'close-outline' className='menu-nav-icon close-outline'/>
+
+
+            </div>
         </div>
     </Nav>
   )

@@ -74,5 +74,23 @@ const MainHeader = styled.header`
      border-radius: 15%;
      
     }
+
+    @media (max-width: 768px){
+
+     padding: 0.5rem 3rem;
+
+      .email{
+       display: none;
+      }
+
+       .logo {
+      
+      width: 12vw;
+      max-width: fit-content;
+      height: auto;
+
+    
+    }
+    }
 `;
 export default Header
