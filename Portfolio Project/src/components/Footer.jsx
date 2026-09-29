@@ -220,13 +220,13 @@ letter-spacing:0.2rem;
 
 
   .container {
- 
+
     padding: 4rem 2rem;
     gap: 1.8rem;
   }
 
   .footerlogo {
-    width: 22%;
+    width: 10%;
   }
 
   img {
@@ -282,19 +282,19 @@ letter-spacing:0.2rem;
 @media (max-width: 480px) {
 
   .container {
-   height: 20vh;
-    padding: 3.5rem 1.2rem;
+   
+    padding: 2rem 1.2rem;
     gap: 1.5rem;
   }
 
   .footerlogo {
-    width: 20%;
+    width: 15%;
     
   }
 
   img {
 
-    margin-top: -80px;
+    margin-top: -100px;
   }
 
   .navlist {
@@ -322,41 +322,8 @@ letter-spacing:0.2rem;
 }
 
 
-/* =========================
-   EXTRA SMALL
-========================= */
 
-@media (max-width: 360px) {
 
-  .container {
-    padding: 3rem 1rem;
-  }
-
-  .footerlogo {
-    width: 35%;
-  }
-
-  img {
-    margin-top: -35px;
-  }
-
-  .navlist {
-    font-size: 1.1rem;
-  }
-
-  .socials a {
-    font-size: 1.2rem;
-    padding: 0.35rem;
-  }
-
-  .email {
-    font-size: 0.9rem;
-  }
-
-  .copyright {
-    font-size: 0.75rem;
-  }
-}
 
 `;
 

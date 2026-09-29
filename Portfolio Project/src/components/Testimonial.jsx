@@ -177,7 +177,7 @@ const Testimonial = () => {
     padding: .5rem 0;
     margin-bottom: 2.5rem;
     text-align: center;
-     font-size: 3rem;
+     font-size: 2.5rem;
   }
 
   .sub-heading {
@@ -206,7 +206,7 @@ const Testimonial = () => {
   }
 
   .test {
-    width: 100%;
+    width: 90%;
     max-width: 100vw;
   }
 
@@ -237,7 +237,7 @@ const Testimonial = () => {
 
   .main-heading {
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .sub-heading {
@@ -259,7 +259,7 @@ const Testimonial = () => {
   }
 
   .test {
-    width: 100%;
+    width: 90%;
     max-width: 100vw;
   }
 
