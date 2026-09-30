@@ -17,7 +17,7 @@ export const Projectslist = [
         type: "Next.js",
         title: "API Hub",
         description: "Explore different APIs and their real-time data. Each Project is integrated with a unique API to bring you useful information",
-        image: 'images/weatherapp.png',
+        image: 'images/APIhub.png',
         link: 'https://superb-taiyaki-4e600d.netlify.app/',
         github: '',
     },
