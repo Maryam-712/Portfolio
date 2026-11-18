@@ -18,8 +18,8 @@ export const Projectslist = [
         title: "API Hub",
         description: "Explore different APIs and their real-time data. Each Project is integrated with a unique API to bring you useful information",
         image: 'images/APIhub.png',
-        link: 'https://superb-taiyaki-4e600d.netlify.app/',
-        github: '',
+        link: 'https://api-integration-project-theta.vercel.app/',
+        github: 'https://github.com/Maryam-712/API-Integration-Project-',
     },
 
     {
@@ -28,8 +28,8 @@ export const Projectslist = [
         title: "Promptopia",
         description: "It is an open-sourcce AI prompting tool for modern world to discover, create and share creative prompts",
         image: 'images/promptopia.png',
-        link: 'https://superb-taiyaki-4e600d.netlify.app/',
-        github: '',
+        link: 'https://promptopia-kohl-nu-25.vercel.app/',
+        github: 'https://github.com/Maryam-712/Promptopia',
     },
 
     {
@@ -39,7 +39,7 @@ export const Projectslist = [
         description: "A React weather application that fetches real-time weather data from an external API with city search functionality.",
         image: 'images/weatherapp.png',
         link: 'https://superb-taiyaki-4e600d.netlify.app/',
-        github: '',
+        github: 'https://github.com/Maryam-712/Project2',
 
     },
 
