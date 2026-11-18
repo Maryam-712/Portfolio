@@ -4,7 +4,7 @@ import { SecondaryButton, PrimaryButton } from '../styles/button'
 import { Link } from 'react-router-dom'
 
 
-const ProjectCard = ({type, title, description, image, link}) => {
+const ProjectCard = ({type, title, description, image, link, github}) => {
 
   const ProjectCard = styled.article`
    
@@ -308,7 +308,7 @@ margin: 0 2.5rem .5rem;
            <a href={link}>Live Site</a>
         </PrimaryButton >
         <SecondaryButton className='project-btn'>
-        <a href={link}>Github</a>
+        <a href={github}>Github</a>
         </SecondaryButton>
         </div>
     </div>

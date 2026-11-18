@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { CgMenu,  CgCloseO  } from "react-icons/cg";
 
 const Navbar = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+     setOpenMenu(false);
+    }, [location.pathname])
+    
 
     const Nav = styled.nav`
     

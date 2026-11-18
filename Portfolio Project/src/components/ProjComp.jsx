@@ -3,6 +3,7 @@ import { PrimaryButton } from "../styles/button";
 import ProjectCard from "./ProjectCard"
 import styled from "styled-components";
 import { FaArrowRight } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const ProjComp = () => {
 
@@ -226,9 +227,9 @@ const ProjComp = () => {
             <p className='sub-heading'>My Work</p>
             <h2 className='main-heading'>Selected Projects</h2>
           </div>
-          <a href="/project" className="proj-btn"> View All
+          <NavLink to="/project" className="proj-btn"> View All
             <FaArrowRight className='icons' />
-          </a>
+          </NavLink>
 
         </div>
 
